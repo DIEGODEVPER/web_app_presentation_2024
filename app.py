@@ -1,6 +1,6 @@
 import streamlit as st
 import re
-from streamlit_lottie import st_lottie
+from streamlit_lottie import st_lottie  #Pagina: Lotiefiles.com
 import requests
 
 #Variables
@@ -47,7 +47,7 @@ with st.container():
     st.write("""
              Somos unos apasionados de la tecnología y la innovación, especializados en el sector de la digitalización y automatización de negocios. Nos gusta crear soluciones para resolver problemas y mejorar procesos.
              """)
-    st.write("[Saber más](https://valerapp.com/)")
+    #st.write("[Saber más](https://valerapp.com/)") #Esto es para direccionar a una pagina web
 
 
 #seccion sobre nosotros
@@ -71,7 +71,7 @@ with st.container():
             ***Si esto suena interesante para ti puedes contactarnos a través del formulario que encontrarás al final de la página*** 
                  
                  """)
-        st.write("[Más sobre nosotros>](https://valerapp.com/about/)")
+       # st.write("[Más sobre nosotros>](https://valerapp.com/about/)") #Esto es para direccionar a una pagina web
 
     with animation_column:
         lottie = load_lottie(lottie_url)
@@ -92,7 +92,7 @@ with st.container():
             Si en tus procesos diarios tienes que introducir información en diferentes fuentes de datos o bien tienes que trabajar con documentación en papel, es hora de pensar en implementar una aplicación en tu negocio para potenciar y optimizar el funcionamiento de los procesos diarios.    
             """
         )
-        st.write("[Ver servicios >](https://valerapp.com/services/)")
+       # st.write("[Ver servicios >](https://valerapp.com/services/)") #Esto es para direccionar a una pagina web
     
 with st.container():
     st.write("---")
@@ -107,7 +107,7 @@ with st.container():
             Si realizas cualquier tipo de tarea repetitiva como por ejemplo introducir datos en excel u otras aplicaciones, gestión de facturas, envío de emails a proveedores etc Lo que quizás necesitas es una automatización de tareas para poder liberar recursos de esas actividades y poder emplearlos en otras tareas más productivas.
             """
         )
-        st.write("[Ver servicios >](https://valerapp.com/services/)")
+       # st.write("[Ver servicios >](https://valerapp.com/services/)") #Esto es para direccionar a una pagina web
 
 with st.container():
     st.write("---")
@@ -122,7 +122,7 @@ with st.container():
             Si sientes que no tienes una visión clara de datos de tu negocio lo que necesitas es una aplicación en la que puedas tener toda la información de interes de tu empresa.
             """
         )
-        st.write("[Ver servicios >](https://valerapp.com/services/)")
+        #st.write("[Ver servicios >](https://valerapp.com/services/)") #Esto es para direccionar a una pagina web
 
 with st.container():
     st.write("---")

@@ -62,13 +62,13 @@ with st.container():
                  Nuestro objetivo es poder aportar valor a los negocios ayudandoles a ahorrar tiempo y dinero a través de la implantación de nuevas tecnologías como la inteligencia artifical, analisis de datos o implantación de software de automatización.
             Seguramente te vamos a poder ayudar si:
 
-            - Tienes un negocio y quieres mejorar tus procesos de trabajo para ahorrar tiempo y dinero
-            - Tienes trabajadores que emplean parte de su jornada a realizar tareas repetitivas sin valor añadido para tu negocio
-            - No tienes claras las métricas de tu negocio y quieres tomar decisiones basadas en datos
-            - Quieres mejorar la experiencia de tus clientes
-            - Usas herramientas de software antiguas o poco eficientes o procesos en los que usas papel y bolígrafo
+            - Tienes un negocio y quieres mejorar tus procesos de trabajo para ahorrar tiempo y dinero.
+            - Tienes trabajadores que emplean parte de su jornada a realizar tareas repetitivas sin valor añadido para tu negocio.
+            - No tienes claras las métricas de tu negocio y quieres tomar decisiones basadas en datos.
+            - Quieres mejorar la experiencia de tus clientes.
+            - Usas herramientas de software antiguas o poco eficientes o procesos en los que usas papel y bolígrafo.
 
-            ***Si esto suena interesante para ti puedes contactarnos a través del formulario que encontrarás al final de la página*** 
+            ***Si esto suena interesante para ti puedes contactarnos a través del formulario que encontrarás al final de la página.*** 
                  
                  """)
        # st.write("[Más sobre nosotros>](https://valerapp.com/about/)") #Esto es para direccionar a una pagina web
@@ -127,7 +127,7 @@ with st.container():
 with st.container():
     st.write("---")
     st.header("Contacta con nosotros 📩")
-    st.write("##")
+    st.write("##") #Salto de linea
     formulario, vacio = st.columns(2)
     contact_form = f"""
     <form action="https://formsubmit.co/{email}" method="POST">

@@ -4,9 +4,9 @@ from streamlit_lottie import st_lottie  #Pagina: Lotiefiles.com
 import requests
 
 #Variables
-email = "diegofiis10@gmail.com"
-path_css = "styles/style.css"
-lottie_url = "https://lottie.host/bea690db-d27b-405f-9120-075358e5fc74/V7PGdaRwLW.json"
+email = "diegofiis10@gmail.com" #Email del buzón de recepción del formulario
+path_css = "styles/style.css"   #Ruta logica del archivo del css
+lottie_url = "https://lottie.host/bea690db-d27b-405f-9120-075358e5fc74/V7PGdaRwLW.json"  #Acceso al formulario de Lottie
 lottie_contact_url = "https://lottie.host/9b81543c-add6-4c0f-86da-5e5b1328237b/Oh4udOR9Nk.json"
 
 #configuracion web app
@@ -26,12 +26,14 @@ def validate_email(email):
     # If there is a match, the email is valid; otherwise, it's not
     return bool(match)
 
+#Creacion de función para lectura del archivo CSS
 def css_load(css_file):
     with open(css_file) as file:
-        st.markdown(f"<style>{file.read()}</style>", unsafe_allow_html=True)
+        st.markdown(f"<style>{file.read()}</style>", unsafe_allow_html=True) #markdown: funcion de streamlit para codigo HTML
 
-css_load(path_css)
+css_load(path_css)  #Ingreso a la funcion creada para levantar el codigo CSS
 
+#Creacion de funcion para tomar el archivo lottie y levantarlo a la aplicacion.
 def load_lottie(url):
     r = requests.get(url)
     if r.status_code != 200:
@@ -39,6 +41,8 @@ def load_lottie(url):
     return r.json()
 
 #Definir el frontend
+#====================
+
 #seccion introduccion
 
 with st.container():

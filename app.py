@@ -8,6 +8,7 @@ email = "diegofiis10@gmail.com" #Email del buzón de recepción del formulario
 path_css = "styles/style.css"   #Ruta logica del archivo del css
 lottie_url = "https://lottie.host/bea690db-d27b-405f-9120-075358e5fc74/V7PGdaRwLW.json"  #Acceso al formulario de Lottie
 lottie_contact_url = "https://lottie.host/9b81543c-add6-4c0f-86da-5e5b1328237b/Oh4udOR9Nk.json"
+lottie_ingresos_url = "https://lottie.host/8cc40ca8-4bf0-4251-935b-83c2ba5bc8a5/to6e2BsXuL.json"
 
 #configuracion web app
 st.set_page_config(page_title="DGSRAPP", page_icon="🤖", layout= "wide")
@@ -112,7 +113,7 @@ with st.container():
     with image_column:
         st.image("assets/automation.png")
     with text_column:
-        st.subheader("Automatización de procesos")
+        st.subheader("Automatizaciones")
         st.write(
             """
             Si realizas cualquier tipo de tarea repetitiva como por ejemplo introducir datos en excel u otras aplicaciones, gestión de facturas, envío de emails a proveedores etc Lo que quizás necesitas es una automatización de tareas para poder liberar recursos de esas actividades y poder emplearlos en otras tareas más productivas.
@@ -134,6 +135,28 @@ with st.container():
             """,unsafe_allow_html=True)
        
         #st.write("[Ver servicios >](https://valerapp.com/services/)") #Esto es para direccionar a una pagina web
+
+with st.container():
+    st.write("---")
+    st.write("##")
+    text_column, animation_column_ingresos = st.columns((1,2))
+    #with image_column:
+        #st.image("assets/visualizacion.png")
+    with text_column:
+        st.subheader("Desarrollos")
+        st.write(
+            """
+            En este espacio se estaran alojando los trabajos realizados.
+            """,unsafe_allow_html=True)
+        with st.expander("Dale click para que puedas ver"):
+             st.balloons()
+             #st.whrite("[MultiApp]")
+             st.write("[MultiApp](https://multiapp2023.streamlit.app/)") #Esto es para direccionar a una pagina web
+
+    with animation_column_ingresos:
+        lottie = load_lottie(lottie_ingresos_url) 
+        st_lottie(lottie, height=500)
+
 
 with st.container():
     st.write("---")

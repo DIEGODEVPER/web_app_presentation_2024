@@ -53,7 +53,7 @@ with st.container():
              Somos unos apasionados de la tecnología y la innovación, especializados en el sector de la digitalización y automatización de negocios. Nos gusta crear soluciones para resolver problemas y mejorar procesos.
              """,
             unsafe_allow_html=True)
-    st.markdown(f"<p class=texto> Somos unos apasionados de la tecnología y la innovación, especializados en el sector de la digitalización y automatización de negocios. Nos gusta crear soluciones para resolver problemas y mejorar procesos. </p>", unsafe_allow_html=True)
+    
     #st.write("[Saber más](https://valerapp.com/)") #Esto es para direccionar a una pagina web
 
 

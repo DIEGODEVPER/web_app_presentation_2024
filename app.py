@@ -13,9 +13,10 @@ lottie_contact_url = "https://lottie.host/9b81543c-add6-4c0f-86da-5e5b1328237b/O
 st.set_page_config(page_title="DGSRAPP", page_icon="🤖", layout= "wide")
 
 
-#Funciones 
+#FUNCIONES
+#=========
 
-#Esta funcion esta en regex, la extraje de ChatGTP
+#Esta funcion esta creada en regex, la consulte y extraje de ChatGTP
 def validate_email(email):
     # Define the regular expression pattern for a valid email address
     pattern = r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
@@ -50,7 +51,9 @@ with st.container():
     st.title("Creamos soluciones para acelerar tu negocio")
     st.write("""
              Somos unos apasionados de la tecnología y la innovación, especializados en el sector de la digitalización y automatización de negocios. Nos gusta crear soluciones para resolver problemas y mejorar procesos.
-             """)
+             """,
+            unsafe_allow_html=True)
+    st.markdown(f"<p class=texto> Somos unos apasionados de la tecnología y la innovación, especializados en el sector de la digitalización y automatización de negocios. Nos gusta crear soluciones para resolver problemas y mejorar procesos. </p>", unsafe_allow_html=True)
     #st.write("[Saber más](https://valerapp.com/)") #Esto es para direccionar a una pagina web
 
 
@@ -74,7 +77,11 @@ with st.container():
 
             ***Si esto suena interesante para ti puedes contactarnos a través del formulario que encontrarás al final de la página.*** 
                  
-                 """)
+                 """,
+            unsafe_allow_html=True)     
+                 
+
+         
        # st.write("[Más sobre nosotros>](https://valerapp.com/about/)") #Esto es para direccionar a una pagina web
 
     with animation_column:
@@ -83,9 +90,9 @@ with st.container():
 
 #Seccion servicios
 with st.container():
-    st.write("---")
+    st.write("---") #Creacion de linea continua, como separador.
     st.header("Servicios 💻")
-    st.write("##")
+    st.write("##") #Salto de linea
     image_column, text_column = st.columns((1,2))
     with image_column:
         st.image("assets/apps.png")
@@ -94,8 +101,8 @@ with st.container():
         st.write(
             """
             Si en tus procesos diarios tienes que introducir información en diferentes fuentes de datos o bien tienes que trabajar con documentación en papel, es hora de pensar en implementar una aplicación en tu negocio para potenciar y optimizar el funcionamiento de los procesos diarios.    
-            """
-        )
+            """,unsafe_allow_html=True)
+        
        # st.write("[Ver servicios >](https://valerapp.com/services/)") #Esto es para direccionar a una pagina web
     
 with st.container():
@@ -109,8 +116,8 @@ with st.container():
         st.write(
             """
             Si realizas cualquier tipo de tarea repetitiva como por ejemplo introducir datos en excel u otras aplicaciones, gestión de facturas, envío de emails a proveedores etc Lo que quizás necesitas es una automatización de tareas para poder liberar recursos de esas actividades y poder emplearlos en otras tareas más productivas.
-            """
-        )
+            """,unsafe_allow_html=True)
+        
        # st.write("[Ver servicios >](https://valerapp.com/services/)") #Esto es para direccionar a una pagina web
 
 with st.container():
@@ -124,8 +131,8 @@ with st.container():
         st.write(
             """
             Si sientes que no tienes una visión clara de datos de tu negocio lo que necesitas es una aplicación en la que puedas tener toda la información de interes de tu empresa.
-            """
-        )
+            """,unsafe_allow_html=True)
+       
         #st.write("[Ver servicios >](https://valerapp.com/services/)") #Esto es para direccionar a una pagina web
 
 with st.container():

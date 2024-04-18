@@ -151,6 +151,7 @@ with st.container():
         with st.expander("Dale click para que puedas ver"):
              st.balloons()
              #st.whrite("[MultiApp]")
+             st.write("[BarberiaCitas](https://reservabarberiaapp.streamlit.app/)") #Esto es para direccionar a una pagina web
              st.write("[MultiApp](https://multiapp2023.streamlit.app/)") #Esto es para direccionar a una pagina web
 
     with animation_column_ingresos:
@@ -180,3 +181,5 @@ with st.container():
     with vacio:
         lottie_contact = load_lottie(lottie_contact_url)
         st_lottie(lottie_contact, height=300)
+
+

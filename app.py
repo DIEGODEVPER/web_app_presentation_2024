@@ -151,6 +151,7 @@ with st.container():
         with st.expander("Dale click para que puedas ver"):
              st.balloons()
              #st.whrite("[MultiApp]")
+             st.write("[Enfermeria a Domicilio](https://topicnurse.streamlit.app/)") #Esto es para direccionar a una pagina web
              st.write("[BarberiaCitas](https://reservabarberiaapp.streamlit.app/)") #Esto es para direccionar a una pagina web
              st.write("[MultiApp](https://multiapp2023.streamlit.app/)") #Esto es para direccionar a una pagina web
 
